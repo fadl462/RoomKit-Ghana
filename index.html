@@ -43,6 +43,20 @@ section{padding:76px 0}.head{max-width:760px;margin-bottom:28px}.head h2{font-si
 footer{background:#111;color:#999;padding:32px 0;font-size:11px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot strong{color:#fff}.legal{margin-top:14px;color:#666;font-size:9px}
 @media(max-width:900px){.heroGrid,.calcGrid,.visual,.choose-grid{grid-template-columns:1fr}.benefits,.who,.steps{grid-template-columns:1fr 1fr}.choose-card{min-height:0;border-right:0;border-bottom:1px solid #d9d4cc}.choose-card:last-child{border-bottom:0}.nav{display:none}.heroImg img{height:400px}}
 @media(max-width:600px){section{padding:56px 0}.hero{padding:42px 0}.heroImg img{height:320px}h1{letter-spacing:-2.5px}.calc{padding:19px}.form{grid-template-columns:1fr}.span{grid-column:auto}.benefits,.who,.steps,.components{grid-template-columns:1fr}.visualCard img{height:320px}.reorder,.final{display:block;padding:28px}.reorder .btn,.final .btn{margin-top:18px}}
+
+@media(max-width:600px){
+html{scroll-padding-top:60px}body{font-size:14px;padding-bottom:64px;overflow-x:hidden}.wrap{width:calc(100% - 28px)}
+.top{font-size:9px;line-height:1.25;padding:7px 9px}header{height:58px}nav{height:58px}.brand{font-size:10px;gap:7px}.mark{width:31px;height:31px}.brand small{font-size:6px;letter-spacing:1.3px}.nav{display:none}header .btn{padding:9px 12px;font-size:9px}
+section{padding:50px 0}.hero{padding:34px 0 38px}.heroGrid,.calcGrid,.visual,.choose-grid{grid-template-columns:1fr}.heroGrid{gap:24px}.eyebrow{font-size:8px;letter-spacing:1.3px;margin-bottom:12px}h1{font-size:42px;line-height:.96;letter-spacing:-2.6px}.hero p{font-size:14px;line-height:1.55}.actions{gap:8px}.actions .btn{flex:1;min-width:140px;padding:12px 10px;font-size:10px}.proof{font-size:9px;gap:8px 12px}.heroImg img{height:285px;border-radius:20px}.tag{left:10px;right:10px;bottom:10px;padding:10px 11px;font-size:9px}.tag b{font-size:11px}
+.head{margin-bottom:21px}.kicker{font-size:8px;letter-spacing:1.3px}.head h2,.choose-head h2{font-size:34px;line-height:1.03;letter-spacing:-1.4px}.head p,.choose-head p{font-size:12px;line-height:1.55}
+.calc{padding:16px;border-radius:20px}.form{grid-template-columns:1fr 1fr;gap:9px}.field label{font-size:8px}.field input{padding:12px 9px;font-size:14px}.span{grid-column:1/-1}.quick button{padding:8px 9px;font-size:9px}.note{font-size:8px}.result{padding:17px;border-radius:17px}.total{font-size:40px}.metric{padding:9px}.metric span{font-size:8px}.metric b{font-size:14px}.row{font-size:10px;padding:8px 0}.result .btn{padding:12px 9px;font-size:10px}
+.visual{gap:14px}.visualCard{border-radius:18px}.visualCard img{height:290px}.copy{padding:16px}.copy h3{font-size:18px}.copy p{font-size:11px}.components{grid-template-columns:1fr 1fr;gap:7px}.component{padding:11px 9px;font-size:10px;min-height:40px}.components img{min-height:190px!important;height:190px!important}
+.benefits,.who,.steps{grid-template-columns:1fr}.benefit,.whoCard,.step{padding:16px;border-radius:15px}.benefit b,.whoCard h3,.step h3{font-size:13px}.benefit span,.whoCard p,.step p{font-size:10px}
+.choose-section{padding-top:50px}.choose-head{margin-bottom:21px}.choose-head h2{font-family:Georgia,"Times New Roman",serif;font-size:38px}.choose-grid{border-radius:0}.choose-card{min-height:0;padding:19px 17px 17px;border-right:0;border-bottom:1px solid #d9d4cc}.choose-card.featured{order:-1}.choose-label{font-size:20px}.choose-desc{font-size:10px}.choose-price{font-size:31px}.choose-list>div{font-size:11px;padding:8px 0}.choose-btn{height:42px;font-size:10px}
+.marginNote{font-size:9px;line-height:1.45;padding:12px}.reorder,.final{display:block;padding:23px;border-radius:20px}.reorder h2,.final h2{font-size:29px;line-height:1.05}.reorder p,.final p{font-size:11px}.reorder .btn,.final .btn{width:100%;margin-top:16px;padding:12px;font-size:10px}
+footer{padding:26px 0 75px}.foot{display:grid;gap:12px;font-size:10px}.legal{font-size:8px;line-height:1.4}button,a.btn,.choose-btn{min-height:40px}
+.mobile-cta{display:flex!important}
+}
 </style></head>
 <body>
 <div class="top"><b>FIRST SHIPMENT ARRIVING SOON</b> • Bulk hotel supply • Accra & nationwide delivery</div>
@@ -158,4 +172,4 @@ function calc(){
 ['rooms','occupancy','buffer','price','delivery'].forEach(id=>$(id).addEventListener('input',calc));
 document.querySelectorAll('.quick button').forEach(x=>x.onclick=()=>{$('rooms').value=x.dataset.r;calc()});
 calc();
-</script></body></html>
+</script><div class="mobile-cta" style="display:none;position:fixed;left:10px;right:10px;bottom:10px;z-index:100;background:#111;border-radius:15px;padding:7px;gap:7px;box-shadow:0 12px 35px #0004"><a href="#calculator" style="flex:1;text-align:center;background:#fff;color:#111;border-radius:10px;padding:11px 8px;font-size:10px;font-weight:800">Calculate</a><a href="https://wa.me/233245909286?text=Hello%20Roomkit%20Ghana%2C%20I%20want%20a%20hotel%20amenity%20kit%20quotation." target="_blank" style="flex:1;text-align:center;background:#18a45f;color:#fff;border-radius:10px;padding:11px 8px;font-size:10px;font-weight:800">WhatsApp</a></div></body></html>
